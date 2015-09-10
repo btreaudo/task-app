@@ -11,6 +11,8 @@
 
 <br>
 
-<%= link_to 'New User task', new_user_task_path, remote: true, class: "btn btn-success" %>
+<%= link_to  new_user_task_path, remote: true do %>
+<buttton class="btn btn-success"> <%= fa_icon "plus" %></btn>
+<% end %>
 
 <div id="task-form"></div>
